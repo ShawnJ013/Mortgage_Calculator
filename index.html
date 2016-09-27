@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mortgage Calculator</title>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet">
+
+<body style="margin: 55px; align-content: ">
+	<right>
+	<h1>jQuery Mortgage Calculator</h1>
+	</div class="row">
+	<div class="col-xs-6 col-md-4"></div>
+    <!-- Line -->
+	<hr>     
+
+	<div id = "box ">
+		<div id ="mortgageTable ">
+		 
+		 <div class="col-sm-10">
+			<input type="number" id ="balance" placeholder="Loan Balance  "><br>
+		 </div>
+				<!-- An input element for the user to enter the annual percentage rate of charge (APR). -->
+			
+			<div class="col-md-4">
+				<input type="number" id ="apr" placeholder="Interest Rate (%)  "><br>
+			</div>
+				<!-- An input element for the user to enter the loan term in years. -->
+			<div class="col-md-4">
+				<input type="number" id ="term" placeholder="Loan Term (years)  "><br>
+			</div>
+				<!-- A button element for the user to calculate their monthly mortgage payment based on the above inputs. -->
+			<div class="col-md-4">
+					<select id="period">
+		<!-- A select element for the user to select a period, populated with option elements where the value attribute is set to the available periods, in the case, either 'monthly' or 'bimonthly', and the content inside of the option elements represents the corresponding number of periods over a year (12 or 6). -->
+							<option value="12">Monthly</option>
+							<option value="6">Bi-Monthly</option>
+					</select>
+			</div>
+	<br>
+	</div>
+		<div>
+		<div class="col-xs-6 col-md-4"></div>
+      		<button type="Submit" id="button" class="btn btn-primary">Calculate</button>
+			<p id="futureoutput"></p>
+		</div>
+	</div>
+</div>
+<!-- Bootstrap -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+<!-- Also make sure you reference your index.js before the </body> tag.-->
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+
+</html>
+
+
+
